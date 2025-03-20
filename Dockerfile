@@ -9,8 +9,6 @@ COPY requirements.txt /app/
 
 # Install any dependencies
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install --upgrade setuptools
-RUN pip install distutils
 
 
 # Copy the rest of the application files
