@@ -19,11 +19,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                sh "
-                export DOCKER_BUILDKIT=1
-                docker build -t manikandan51/my-app:latest .
-                "
-        }
+                sh "docker build -t manikandan51/my-app:latest ."
+                }        
             }
         }
 
